@@ -1,6 +1,5 @@
 import React from "react";
-import { useState, useEffect } from "react";
-import { RiUserLine, RiSettings2Line } from "react-icons/ri";
+
 
 function Navbar() {
   return (
@@ -15,16 +14,23 @@ function Navbar() {
             alt="Logo"
             className="w-24 h-20 "
           />
-          <span className="text-3xl ml-20">Tu tienda en linea</span>
+          <span className="text-4xl ml-20 font-serif">Perrata Store</span>
           <div className="">
-            <button className="btn btn-primary border-blue-500 px-3 ">
+            <button className="btn btn-primary border-blue-500 px-3 rounded-lg outline-none ">
               Sign in
             </button>
-            <button className="btn btn-primary border-blue-500 px-3 ml-2">
+            <button className="btn btn-primary border-blue-500 px-3 ml-2 rounded-lg outline-none">
               Log in
             </button>
           </div>
         </div>
+      </div>
+      <div className=" justify-between flex gap-2 w-full mx-6">
+       <p>Agente</p> 
+       <p>Agente</p> 
+       <p>Agente</p> 
+       <p>Agente</p> 
+       <p>Agente</p> 
       </div>
     </nav>
   );
