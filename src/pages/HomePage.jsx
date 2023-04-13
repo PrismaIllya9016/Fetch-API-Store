@@ -1,13 +1,10 @@
-import Navbar from "../components/Navbar.jsx";
+
 import Cards from "../components/Cards.jsx";
 
-function HomePage() {
+  export const HomePage = () => {
   return (
-    <div className="App">
-      <Navbar />
+    <div className="">
       <Cards />
     </div>
   );
 }
-
-export default HomePage;

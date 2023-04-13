@@ -1,5 +1,5 @@
 import React from "react";
-
+import { Link } from "react-router-dom";
 
 function Navbar() {
   return (
@@ -9,11 +9,13 @@ function Navbar() {
           className="navbar-brand flex justify-between w-full items-center"
           href="#"
         >
-          <img
-            src="https://upload.wikimedia.org/wikipedia/commons/a/ab/Logo_TV_2015.png"
-            alt="Logo"
-            className="w-24 h-20 "
-          />
+          <Link to="/">
+            <img
+              src="https://upload.wikimedia.org/wikipedia/commons/a/ab/Logo_TV_2015.png"
+              alt="Logo"
+              className="w-24 h-20 "
+            />
+          </Link>
           <span className="text-4xl ml-20 font-serif">Perrata Store</span>
           <div className="">
             <button className="btn btn-primary border-blue-500 px-3 rounded-lg outline-none ">
@@ -25,12 +27,22 @@ function Navbar() {
           </div>
         </div>
       </div>
-      <div className=" justify-between flex gap-2 w-full mx-6">
-       <p>Agente</p> 
-       <p>Agente</p> 
-       <p>Agente</p> 
-       <p>Agente</p> 
-       <p>Agente</p> 
+      <div className=" justify-between flex gap-2 w-full mx-6 text-white">
+        <p>
+          <Link to="/about">About</Link>
+        </p>
+        <p>
+          <Link to="/about">Electronics</Link>
+        </p>
+        <p>
+          <Link to="/about">Jewelery</Link>
+        </p>
+        <p>
+          <Link to="/about">Men's clothing</Link>
+        </p>
+        <p>
+          <Link to="/about">Women's clothing</Link>
+        </p>
       </div>
     </nav>
   );

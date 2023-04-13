@@ -1,6 +1,7 @@
 import React from "react";
 import { useState, useEffect } from "react";
 import { RiShoppingCartLine } from "react-icons/ri";
+import { Link } from "react-router-dom";
 
 function Cards() {
   const [error, setError] = useState(null);
@@ -81,12 +82,12 @@ function Cards() {
 
               <div className="">
                 <div className=" flex justify-center">
-                  <button
-                    href="#"
-                    className="bg-blue-500 hover:bg-blue-700  text-white font-bold shadow-lg shadow-indigo-500/40 mb-2  py-2 px-4 rounded-xl w-full flex justify-center items-center "
+                  <Link
+                    to={`/product/${item.id}`}
+                    className="bg-blue-500 hover:bg-blue-700 text-white font-bold shadow-lg shadow-indigo-500/40 mb-2 py-2 px-4 rounded-xl w-full flex justify-center items-center"
                   >
                     <h3>Comprar</h3>
-                  </button>
+                  </Link>
                 </div>
                 <div>
                   <button
