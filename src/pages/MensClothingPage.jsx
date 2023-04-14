@@ -3,14 +3,14 @@ import { useState, useEffect } from "react";
 import { RiShoppingCartLine } from "react-icons/ri";
 import { Link } from "react-router-dom";
 
-export const OnlyPage = () => {
+export const MensClothingPage = () => {
   const [error, setError] = useState(null);
   const [isLoaded, setIsLoaded] = useState(false);
   const [items, setItems] = useState([]);
   const [selectedItemIndex, setSelectedItemIndex] = useState(null);
 
   useEffect(() => {
-    fetch("https://fakestoreapi.com/products/category/jewelery")
+    fetch("https://fakestoreapi.com/products/category/men's clothing")
       .then((res) => res.json())
       .then(
         (result) => {
@@ -99,3 +99,5 @@ export const OnlyPage = () => {
     );
   }
 }
+
+

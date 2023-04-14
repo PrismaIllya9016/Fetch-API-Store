@@ -18,30 +18,34 @@ function Navbar() {
           </Link>
           <span className="text-4xl ml-20 font-serif">Perrata Store</span>
           <div className="">
-            <button className="btn btn-primary border-blue-500 px-3 rounded-lg outline-none ">
+            <Link
+              to="/signup"
+              className="btn btn-primary border-blue-500 px-3 rounded-lg outline-none"
+            >
               Sign in
-            </button>
-            <button className="btn btn-primary border-blue-500 px-3 ml-2 rounded-lg outline-none">
+            </Link>
+
+            <Link
+              to="/login"
+              className="btn btn-primary border-blue-500 px-3 ml-2 rounded-lg outline-none"
+            >
               Log in
-            </button>
+            </Link>
           </div>
         </div>
       </div>
       <div className=" justify-between flex gap-2 w-full mx-6 text-white">
         <p>
-          <Link to="/about">About</Link>
+          <Link to="/products/category/electronics">Electronics</Link>
         </p>
         <p>
-          <Link to="/about">Electronics</Link>
+          <Link to="/products/category/jewelery">Jewelery</Link>
         </p>
         <p>
-          <Link to="/about">Jewelery</Link>
+          <Link to="/products/category/mens-clothing">Men's clothing</Link>
         </p>
         <p>
-          <Link to="/about">Men's clothing</Link>
-        </p>
-        <p>
-          <Link to="/about">Women's clothing</Link>
+          <Link to="/products/category/womens-clothing">Women's clothing</Link>
         </p>
       </div>
     </nav>
