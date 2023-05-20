@@ -2,6 +2,7 @@ import React from "react";
 import { useState, useEffect } from "react";
 import { RiShoppingCartLine } from "react-icons/ri";
 import { Link } from "react-router-dom";
+import "./Cards.css";
 
 function Cards() {
   const [error, setError] = useState(null);
@@ -47,15 +48,15 @@ function Cards() {
     return <div>Loading...</div>;
   } else {
     return (
-      <div className="grid grid-cols-4 gap-4">
+      <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-4 sm:grid-cols-1">
         {items.map((item, index) => (
           <div
             key={item.id}
-            className="card shadow-2xl flex justify-between relative flex-col rounded-3xl"
+            className="card shadow-2xl flex justify-between relative flex-col rounded-3xl "
           >
             <img
               src={item.image}
-              className="object-cover shadow-inner h-80 flex justify-center w-full "
+              className="object-cover shadow-inner aspect-video block w-full h-60  "
               alt={item.title}
             />
             <div className="card-body flex flex-col">

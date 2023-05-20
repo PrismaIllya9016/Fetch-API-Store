@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 export const LoginPage = () => {
   return (
@@ -35,12 +36,13 @@ export const LoginPage = () => {
             />
           </div>
           <div className="flex items-center justify-center">
-            <button
+            <Link
+              to={`/testpage/contact`}
               className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
               type="button"
             >
               Ingresar
-            </button>
+            </Link>
           </div>
         </form>
       </div>
